@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="InsertProduct.css">
+    <title> Insert Product</title>
+</head>
+<body>
+    <center>
+        <div id = "header">
+            <div id="ProjectSubject">Software Distribute</div>
+        </div>
+
+        <div id = "container">
+            <form method="POST" action="InsertProduct.jsp">
+            <table>
+            	<tr>
+                    <td>Image</td>
+                    <td><input type = "file" name = "pro_image"></td>
+                </tr>
+                <tr>
+                    <td>Subject(제목)</td>
+                    <td><input type = "text" name = "pro_subject"></td>
+                </tr>
+                <tr>
+                    <td>Price(정가)</td>
+                    <td><input type = "text" name = "pro_price"></td>
+                </tr>
+                <tr>
+                    <td>Release Date(출시일)</td>
+                    <td><input type = "date" name = "pro_release"></td>
+                </tr>
+                <tr>
+                    <td>Assessment(평가)</td>
+                    <td><select name= "pro_assessment">
+                        <option value= "Overwhelming Positive">(95% ~ 99%) Overwhelming Positive(압도적으로 긍정적)</option>
+                        <option value= "Very Positive">(80% ~ 94%) Very Positive(매우 긍정적)</option>
+                        <option value= "Positive">(80% ~ 90%) Positive(긍정적)</option>
+                        <option value= "Mostly Positive">(70% ~ 79%) Mostly Positive(대체로 긍정적)</option>
+                        <option value= "Mixed">(40% ~ 69%) Mixed(복합적)</option>
+                        <option value= "Mostly Negative">(20% ~ 39%) Mostly Negative(대체로 부정적)</option>
+                        <option value= "Negative">(0% ~ 39%) Negative(부정적)</option>
+                        <option value= "Very Negative">(0% ~ 19%) Very Negative(매우 부정적)</option>
+                        <option value= "Overwhelmingly Negative">(0% ~ 19%) Overwhelmingly Negative(압도적으로 부정적)</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Production(제작사)</td>
+                    <td><input type = "text" name = "pro_production"></td>
+                </tr>
+                <tr>
+                    <td>Distributor(배급사)</td>
+                    <td><input type = "text" name = "pro_distributor"></td>
+                </tr>
+                <tr>
+                    <td>Explanation(설명)</td>
+                    <td><input type = "text" name = "pro_explanation"></td>
+                </tr>
+            </table>
+            <input type = "submit" value = "Registration">
+            </form>
+        </div>
+        <div id = "footer"></div>
+    </center>
+</body>
+</html>

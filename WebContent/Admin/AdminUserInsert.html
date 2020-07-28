@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="AdminUserInsert.css">
+</head>
+
+<body>
+    <center>
+        <div id="header">
+            <div id="ProjectSubject">Software Distribute</div>
+        </div>
+        <div id="container">
+            <div id="signUpContainer">
+                <div id = "top">
+                    <a href="login.html"><div id = "backButton">back</div></a>
+                    <div id = "SignUp">Sign Up</div>
+                </div>
+                <div>
+                    <form id = "signUpform" action="signUp.jsp" method = "POST">
+                        <span>Your name ----------------------------------</span><br>
+                        <div>
+                            <img src="image/userName.png">
+                            <input type=text name="userName">
+                        </div>
+    
+                        <span>ID --------------------------------------------</span><br>
+                        <div>
+                            <img src="image/userId.png">
+                            <input type=text name="userId">
+                        </div>
+    
+                        <span>Password ------------------------------------</span><br>
+                        <div>
+                            <img src="image/userPassword.png">
+                            <input type=password name="userPassword">
+                            <input type=password name="Re_userPassword" style="margin-left: 40px; margin-top: -5px;">
+                        </div>
+    
+                        <span>Birth ------------------------------------------</span><br>
+                        <div>
+                            <img src="image/userBirth.png">
+                            <input type=date name="userBirth">
+                        </div>
+    
+                        <span>Your Sex -------------------------------------</span><br>
+                        <div>
+                            <img src="image/userSex.png" style = "margin-left: -30px;">
+                            <label for= "Male" style="margin-left: 40px;">Male</label>
+                                <input type = "radio" value = "0" name = "userSex"
+                                        id = "Male" style ="width : 10px; height: 10px; margin-right: 50px;" />
+                            <label for= "Female">Female</lable>
+                                <input type = "radio" value = "1" name = "userSex"
+                                        id = "Female" style ="width : 10px; height: 10px;" />
+                        </div>
+    
+                        <span>Your Phone Number ------------------------</span><br>
+                        <div>
+                            <img src="image/userPhone.png">
+                            <input type=text name="userPhone" pattern="\d{3}\-\d{4}\-\d{4}" title="000-0000-0000 형식으로 입력해주세요" />
+                        </div>
+                        <span>Your E-mail ----------------------------------</span><br>
+                        <div>
+                            <img src="image/userEmail.png">
+                            <input type=text name="userEmail">
+                        </div>
+    
+                        <input type = submit value = "Register" id = "RegisterButton">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </center>
+</body>
+
+</html>
